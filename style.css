@@ -41,3 +41,48 @@
 .translateX:hover::before {
   transform: translateX(0);
 }
+.RotateXAndY:after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: yellowgreen;
+  position: absolute;
+  z-index: -1;
+  transition: 1s;
+  transform: rotateY(90deg);
+}
+.RotateXAndY:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: yellowgreen;
+  position: absolute;
+  z-index: -1;
+  transition: 1s;
+  transform: rotateX(90deg);
+}
+.RotateXAndY:hover:before {
+  transform: rotateX(0deg);
+}
+.RotateXAndY:hover:after {
+  transform: rotateY(0deg);
+}
+.RotateAndTranslate::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: violet;
+  position: absolute;
+  z-index: -1;
+  transition: 2s;
+  transform: translateX(-100%) rotate(45deg);
+}
+.RotateAndTranslate:hover::before {
+  transform: translateX(100%) rotate(45deg);
+}
