@@ -1,3 +1,41 @@
+.textSwitch {
+  margin-left: 3em;
+}
+.textSwitch::after {
+  content: "";
+  animation: addtext 3s infinite;
+}
+@keyframes addtext {
+  0% {
+    content: " Developer";
+  }
+  50% {
+    content: " Developer Web";
+  }
+  100% {
+    content: " Developer Web Sites";
+  }
+}
+.loader {
+  height: 60px;
+  width: 60px;
+  margin-left: 3em;
+  background-color: saddlebrown;
+  border-radius: 10px;
+  animation: loader 3s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes loader {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotateX(0deg) rotateY(180deg);
+  }
+  100% {
+    transform: rotateX(180deg) rotateY(180deg);
+  }
+}
 .comingsoon {
   color: black;
   font-weight: bold;
