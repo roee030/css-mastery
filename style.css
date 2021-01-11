@@ -1,3 +1,21 @@
+.comingsoon {
+  color: black;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  display: block;
+  animation: nadned 2s linear infinite;
+  animation-direction: alternate;
+  transform-origin: top;
+}
+@keyframes nadned {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
+}
 .hover-btn,
 .btn {
   margin: 4em;
